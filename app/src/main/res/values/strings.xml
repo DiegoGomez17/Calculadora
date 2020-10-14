@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="edt_primer_numero">Primero</string>
+    <string name="edt_segundo_numero">Segundo</string>
+    <string name="bt_text_resto">%</string>
+    <string name="bt_text_dividir">/</string>
+    <string name="bt_text_multiplicar">*</string>
+    <string name="bt_text_restar">-</string>
+    <string name="bt_text_sumar"></string>
+    <string name="txt_resultado">0</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_resto"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/botonmenos"
+        android:onClick="resto"
+        android:text="@string/bt_text_resto"
+        app:layout_constraintStart_toEndOf="@+id/bt_dividir"
+        app:layout_constraintTop_toBottomOf="@+id/bt_multiplicar" />
+
+    <Button
+        android:id="@+id/bt_dividir"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/botonmenos"
+        android:onClick="dividir"
+        android:text="@string/bt_text_dividir"
+        app:layout_constraintStart_toStartOf="@+id/bt_sumar"
+        app:layout_constraintTop_toBottomOf="@+id/bt_sumar" />
+
+    <Button
+        android:id="@+id/bt_multiplicar"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:background="@drawable/botonmenos"
+        android:onClick="multiplicar"
+        android:text="@string/bt_text_multiplicar"
+        app:layout_constraintStart_toEndOf="@+id/bt_restar"
+        app:layout_constraintTop_toTopOf="@+id/bt_restar" />
+
+    <Button
+        android:id="@+id/bt_restar"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:alpha="0.8"
+        android:background="@drawable/botonmenos"
+        android:onClick="restar"
+        android:gravity="center|center_horizontal"
+        android:text="@string/bt_text_restar"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/bt_sumar"
+
+        app:layout_constraintTop_toTopOf="@+id/bt_sumar" />
+
+    <EditText
+        android:id="@+id/edt_numero_dos"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="@string/edt_segundo_numero"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/edt_numero_uno"
+        app:layout_constraintTop_toBottomOf="@+id/edt_numero_uno" />
+
+    <EditText
+        android:id="@+id/edt_numero_uno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:autofillHints=""
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="@string/edt_primer_numero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_sumar"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/sumar"
+        android:onClick="sumar"
+        android:scaleX="0.8"
+        android:scaleY="0.9"
+        android:text="@string/bt_text_sumar"
+        app:layout_constraintStart_toStartOf="@+id/edt_numero_dos"
+        app:layout_constraintTop_toBottomOf="@+id/edt_numero_dos" />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:text="@string/txt_resultado"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_resto" />
+</androidx.constraintlayout.widget.ConstraintLayout>
